@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Profile Card Generator</h1>
+    <p>Create your professional profile in seconds.</p>
+  </header>
+
+  <main>
+    <section class="form-box">
+      <h2>Create Your Profile</h2>
+
+      <form id="profileForm">
+        <label>Name *</label>
+        <input name="name" required maxlength="80"
+               placeholder="Your full name">
+
+        <label>Short Bio</label>
+        <textarea name="bio" maxlength="300"
+                  placeholder="Tell us about yourself"></textarea>
+
+        <label>Skills (comma-separated)</label>
+        <input name="skills" placeholder="Java, Python, HTML">
+
+        <label>Avatar Image URL</label>
+        <input name="avatar" type="url"
+               placeholder="https://example.com/photo.jpg">
+
+        <label>GitHub URL</label>
+        <input name="github" type="url"
+               placeholder="https://github.com/username">
+
+        <label>LinkedIn URL</label>
+        <input name="linkedin" type="url"
+               placeholder="https://linkedin.com/in/username">
+
+        <button type="submit">Generate Profile Card</button>
+      </form>
+
+      <p id="message"></p>
+    </section>
+
+    <section>
+      <h2>Your Generated Card</h2>
+      <div id="preview" class="card">
+        <p>Your profile card will appear here.</p>
+      </div>
+    </section>
+
+    <section class="saved-section">
+      <h2>Saved Profiles</h2>
+      <div id="savedProfiles"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

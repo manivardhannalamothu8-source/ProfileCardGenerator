@@ -1,0 +1,116 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f4fa;
+  color: #252744;
+}
+
+header {
+  text-align: center;
+  padding: 35px 15px;
+  background: linear-gradient(135deg, #5145cd, #9375f5);
+  color: white;
+}
+
+header h1 {
+  margin-bottom: 8px;
+}
+
+main {
+  width: min(900px, 92%);
+  margin: 30px auto;
+}
+
+.form-box, .card {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px #25274412;
+  margin-bottom: 24px;
+}
+
+label {
+  display: block;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 7px;
+  border: 1px solid #d5d7e5;
+  border-radius: 8px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 22px;
+  border: none;
+  border-radius: 8px;
+  background: #5b4bd8;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4032b3;
+}
+
+.profile-card {
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #e6e2ff;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 18px 0;
+}
+
+.skill {
+  background: #eeeaff;
+  color: #5145cd;
+  padding: 7px 11px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+a {
+  color: #5145cd;
+  margin: 6px;
+}
+
+.saved-section {
+  margin-bottom: 40px;
+}
+
+.saved-item {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+}
